@@ -1,0 +1,38 @@
+/* Responsive tweaks for app layout */
+.app {
+  background: #141414;
+  min-height: 100vh;
+  color: #fff;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+.loading, .error {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 1.3rem;
+}
+.search-results {
+  margin: 2rem 0;
+}
+@media (max-width: 900px) {
+  .movie-row__list {
+    gap: 0.7rem;
+  }
+  .movie-card {
+    width: 140px;
+    min-width: 140px;
+    height: 210px;
+  }
+}
+@media (max-width: 600px) {
+  .app {
+    padding: 0;
+  }
+  .movie-row__list {
+    padding: 0 0.5rem 1rem 0.5rem;
+  }
+  .movie-card {
+    width: 110px;
+    min-width: 110px;
+    height: 160px;
+  }
+}
